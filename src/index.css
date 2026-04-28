@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent-orange: #ff4f00;
+  --color-canvas-cream: #fffefb;
+  --color-canvas-off-white: #fffdf9;
+  --color-text-primary: #201515;
+  --color-text-secondary: #36342e;
+  --color-border-sand: #c5c0b1;
+  --color-surface-sand-light: #eceae3;
+  --color-background-soft: #faf9f6;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas-cream text-text-primary font-sans antialiased;
+  }
+}
+
+.card-hover:hover {
+  @apply border-accent-orange bg-background-soft;
+}
